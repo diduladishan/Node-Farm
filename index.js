@@ -9,8 +9,10 @@
 // fs.writeFileSync("./txt/output.txt", textOut);
 // console.log("File Wriiten");
 const http = require("http");
+const url = require("url");
 
 const server = http.createServer((req, res) => {
+  console.log(req.url);
   res.end("Hello from the server!");
 });
 
